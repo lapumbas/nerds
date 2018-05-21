@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Nerds-Catalogue</title>
+</head>
+
+<body>
+
+  <div class="main-header-wrapper">
+    <header class="main-header container">
+      <a href="#">
+        <img class="header-logo" src="img/svg-nerds/nerds-logo.svg" alt="nerds logo">
+      </a>
+      <h2 class="visually-hidden">Основная навигация</h2>
+      <ul class="navigation-list">
+        <li>
+          <a href="#">Студия</a>
+        </li>
+        <li>
+          <a href="#">Клиенты</a>
+        </li>
+        <li>
+          <a href="#">Магазин</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <a class="cart" href="#">Корзина</a>
+    </header>
+  </div>
+  
+  <div class="main-title-wrapper">
+    <h1>Магазин готовых шаблонов</h1>    
+  </div>
+
+  <main class="container main-catalogue">
+
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтры</h2>
+      <form class="filters-form" action="#" method="get">
+        <fieldset class="filters-fieldset">
+          <legend class="filters-legend">СТОИМОСТЬ:</legend>
+          <input class="filters-range" type="range" name="range" min="0" max="16000">
+          <p>
+            <label class="filters-label" for="from-field">ОТ</label>
+            <input class="filters-input" type="number" name="from" placeholder="0" min="0" max="16000" id="from-field">
+            <label class="filters-label" for="to-field">ДО</label>
+            <input class="filters-input" type="number" name="to" placeholder="15000" min="0" max="16000" id="to-field">
+          </p>
+        </fieldset>
+        <fieldset class="filters-fieldset">
+          <legend class="filters-legend">Сетка:</legend>
+          <p>
+            <input class="filters-radio" type="radio" name="grid" value="adaptive" id="adaptive-field" checked>
+            <label class="filters-label" for="adaptive-field">Адаптивная</label>
+          </p>
+          <p>
+            <input class="filters-radio" type="radio" name="grid" value="fixed" id="fixed-field">
+            <label class="filters-label" for="fixed-field">Фиксированная</label>
+          </p>
+          <p>
+            <input class="filters-radio" type="radio" name="grid" value="rubber" id="rubber-field">
+            <label class="filters-label" for="rubber-field">Резиновая</label>
+          </p>
+        </fieldset>
+        <fieldset class="filters-fieldset">
+          <legend class="filters-legend">ОСОБЕННОСТИ:</legend>
+          <p>
+            <input class="filters-checkbox" type="checkbox" name="features" value="slider" id="slider-field" checked>
+            <label class="filters-label" for="slider-field">Слайдер</label>
+          </p>
+          <p>
+            <input class="filters-checkbox" type="checkbox" name="features" value="advantages" id="advantages-field">
+            <label class="filters-label" for="advantages-field">Блок преимуществ</label>
+          </p>
+          <p>
+            <input class="filters-checkbox" type="checkbox" name="features" value="news" id="news-field" checked>
+            <label class="filters-label" for="news-field">Новости</label>
+          </p>
+          <p>
+            <input class="filters-checkbox" type="checkbox" name="features" value="gallery" id="gallery-field">
+            <label class="filters-label" for="gallery-field">Галерея</label>
+          </p>
+          <p>
+            <input class="filters-checkbox" type="checkbox" name="features" value="chart" id="chart-field">
+            <label class="filters-label" for="chart-field">Корзина</label>
+          </p>
+        </fieldset>
+        <input class="button filters-button" type="submit" name="show" value="ПОКАЗАТЬ">
+      </form>
+    </section>
+
+    <section class="catalogue">
+      <h2 class="visually-hidden">Каталог</h2>
+      <nav class="catalogue-sort">
+        <p class="catalogue-sort-title">СОРТИРОВАТЬ:</p>
+        <ul class="catalogue-sort-list">
+          <li>
+            <button class="catalogue-sort-button">По цене</button>
+          </li>
+          <li>
+            <button class="catalogue-sort-button">По типу</button>
+          </li>
+          <li>
+            <button class="catalogue-sort-button">По названию</button>
+          </li>
+        </ul>
+        <div class="arrows-wrapper">
+          <div class="catalogue-arrow arrow-decrease">
+            <span class="visually-hidden">По убыванию</span>
+          </div>
+          <div class="catalogue-arrow arrow-increase">
+            <span class="visually-hidden">По возрастанию</span>
+          </div>
+        </div>
+      </nav>
+
+      <ul class="catalogue-list">
+          <li class="catalogue-item item-1">
+            <h2 class="visually-hidden">Сайт Седона</h2>
+          </li>
+          <li class="catalogue-item item-2">
+            <h2 class="visually-hidden">Сайт Седона</h2>
+          </li>
+          <li class="catalogue-item item-3">
+            <h2 class="visually-hidden">Сайт Седона</h2>
+          </li>
+          <li class="catalogue-item item-4">
+            <h2 class="visually-hidden">Сайт Седона</h2>
+          </li>
+          <li class="catalogue-item item-5">
+            <h2 class="visually-hidden">Сайт Седона</h2>
+          </li>
+          <li class="catalogue-item item-6">
+            <h2 class="visually-hidden">Сайт Седона</h2>
+          </li>
+      </ul>
+      <article>
+        <h2 class="visually-hidden">Навигация по страницам каталога</h2>
+        <ul class="pages-list">
+          <li>
+            <button class="button pages-button">1</button>
+          </li>
+          <li>
+            <button class="button pages-button">2</button>
+          </li>
+          <li>
+            <button class="button pages-button">3</button>
+          </li>
+          <li>
+            <button class="button pages-next-button">следующая</button>
+          </li>
+        </ul>
+      </article>
+
+    </section>
+  </main>
+
+
+  <section class="map">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <div class="container">
+        <article class="map-adress">
+          <b class="adress-title">NЁRDS DESIGN STUDIO</b>
+          <p>191186, Санкт-Петербург,
+            <br>ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button write-us-button" href="#">Напишите нам</a>
+        </article>
+      </div>
+    </section>
+  
+    <footer class="container main-footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social-list">
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/svg-nerds/vk-icon.svg" alt="В контакте">
+              
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/svg-nerds/fb-icon.svg" alt="Фейсбук">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/svg-nerds/insta-icon.svg" alt="Инстаграмм">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="footer-slogan">
+        <b class="slogan-title">Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+  
+    </footer>
+
+</body>
+
+</html>
