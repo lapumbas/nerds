@@ -34,6 +34,10 @@
     </div>
   </header>
 
+  <input class="visually-hidden" type="radio" name="slider" value="slide1" id="slide1" checked>
+  <input class="visually-hidden" type="radio" name="slider" value="slide2" id="slide2">
+  <input class="visually-hidden" type="radio" name="slider" value="slide3" id="slide3">
+
   <main>
     <h1 class="visually-hidden">Дизайн студия Нердс</h1>
 
@@ -41,51 +45,49 @@
       <h2 class="visually-hidden">Что мы умеем</h2>
 
       <div class="slider-buttons">
-        <input class="visually-hidden" type="radio" name="slider" value="slide1" id="slide1" checked>
         <label for="slide1"></label>
-        <input class="visually-hidden" type="radio" name="slider" value="slide2" id="slide2">
         <label for="slide2"></label>
-        <input class="visually-hidden" type="radio" name="slider" value="slide3" id="slide3">
         <label for="slide3"></label>
-
+        
       </div>
-
-      <section class="container slide">
-        <h3 class="visually-hidden">слайд 1</h3>
-        <section class="slider-text">
-          <b class="slider-slogan">Долго, дорого, скрупулезно.</b>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="button slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+      <div class="container">
+        <section class="slide slide_1">        
+          <h3 class="visually-hidden">слайд 1</h3>
+          <section class="slider-text">
+            <b class="slider-slogan">Долго, дорого, скрупулезно.</b>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a class="button slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </section>
+          <img src="img/slider1.png" width="698" height="413" alt="slider1 image">
         </section>
-        <img src="img/slider1.png" width="698" height="413" alt="slider1 image">
-      </section>
-
-      <section class="container slide visually-hidden">
-        <h3 class="visually-hidden">слайд 2</h3>
-        <section class="slider-text">
-          <b class="slider-slogan">Любим математику как никто другой</b>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="button slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+        
+        <section class="slide slide_2">
+          <h3 class="visually-hidden">слайд 2</h3>
+          <section class="slider-text">
+            <b class="slider-slogan">Любим математику как никто другой</b>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="button slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </section>
+          <img src="img/slide2.png" width="663" height="430" alt="slider1 image">
         </section>
-        <img src="img/slide2.png" width="663" height="430" alt="slider1 image">
-      </section>
-
-      <section class="container slide visually-hidden">
-        <h3 class="visually-hidden">слайд 3</h3>
-        <section class="slider-text">
-          <b class="slider-slogan">Только ночь, только хардкор</b>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="button slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+        
+        <section class="slide slide_3">
+          <h3 class="visually-hidden">слайд 3</h3>
+          <section class="slider-text">
+            <b class="slider-slogan">Только ночь, только хардкор</b>
+            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button slider-button" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          </section>
+          <img src="img/slide3.png" width="759" height="411" alt="slider1 image">
         </section>
-        <img src="img/slide3.png" width="759" height="411" alt="slider1 image">
       </section>
-    </section>
-
+    </div>
+    
     <div class="container">
-      <section class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
-        <ul class="advantages-list">
-          <li class="advantages-item">
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <ul class="advantages-list">
+        <li class="advantages-item">
             <div class="advantages-icons advantages-icon1"></div>
             <h3 class="advantages-title">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>

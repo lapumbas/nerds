@@ -55,6 +55,7 @@ html {
 a {
   text-decoration: none;
   color: rgb(40, 49, 54);
+  cursor: pointer;
 }
 
 ul {
@@ -242,6 +243,35 @@ ul {
 .slider {
   background: #eeeeee;
   position: relative;
+  min-height: 430px;
+}
+
+.slide {
+  min-height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  background: #eeeeee;
+  width: 1160px;
+  bottom: 0;
+}
+
+.slide img {
+  align-self: flex-end;
+}
+
+.slide_1 {
+  z-index: 30;
+}
+.slide_2 {
+  z-index: 20;
+}
+.slide_3 {
+  z-index: 10;
 }
 
 .slider-buttons {
@@ -255,9 +285,25 @@ ul {
   justify-content: space-between;
   left: 50%;
   bottom: 95px;
+  z-index: 50;
 }
 
-.slider-buttons input+label::before {
+#slide1:checked ~ main .slide_1 {
+  z-index: 40;
+}
+
+#slide2:checked ~ main .slide_2 {
+  z-index: 40;
+}
+
+#slide3:checked ~ main .slide_3 {
+  z-index: 40;
+}
+
+
+#slide1 ~ main .slider-buttons label[for="slide1"]::before,
+#slide2 ~ main .slider-buttons label[for="slide2"]::before,
+#slide3 ~ main .slider-buttons label[for="slide3"]::before {
   content: "";
   width: 18px;
   height: 18px;
@@ -267,18 +313,13 @@ ul {
   cursor: pointer;
 }
 
-.slider-buttons input:checked+label::before {
+#slide1:checked ~ main .slider-buttons label[for="slide1"]::before,
+#slide2:checked ~ main .slider-buttons label[for="slide2"]::before,
+#slide3:checked ~ main .slider-buttons label[for="slide3"]::before {
   background: white url("../img/svg-nerds/slider-button.svg") no-repeat 0 center;
 }
 
-.slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
+
 
 .slider-slogan {
   color: rgb(0, 0, 0);
